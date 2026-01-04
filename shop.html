@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي - المتجر</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">موقعي الإلكتروني</a>
+                </div>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                        <li><a href="shop.html" class="active"><i class="fas fa-shopping-bag"></i> المتجر</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                    </ul>
+                    
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 🛒 صفحة المتجر -->
+        <section class="shop-page">
+            <!-- قسم البطل -->
+            <div class="page-hero">
+                <h1>المتجر</h1>
+                <p>تصفح أفضل المنتجات التقنية بأسعار تنافسية</p>
+            </div>
+            
+            <!-- أدوات التصفية والبحث -->
+            <div class="shop-tools">
+                <div class="search-box">
+                    <input type="text" id="product-search" placeholder="ابحث عن منتج...">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="filter-controls">
+                    <select id="category-filter">
+                        <option value="all">جميع الفئات</option>
+                        <option value="laptops">لابتوبات</option>
+                        <option value="phones">هواتف</option>
+                        <option value="accessories">إكسسوارات</option>
+                    </select>
+                    
+                    <select id="sort-filter">
+                        <option value="default">الترتيب الافتراضي</option>
+                        <option value="price-low">السعر: من الأقل للأعلى</option>
+                        <option value="price-high">السعر: من الأعلى للأقل</option>
+                        <option value="name">الاسم: أ-ي</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- قائمة المنتجات -->
+            <div class="products-container">
+                <div class="products-grid" id="products-grid">
+                    <!-- المنتجات سيتم إضافتها بواسطة JavaScript -->
+                </div>
+            </div>
+            
+            <!-- سلة التسوق -->
+            <div class="cart-sidebar" id="cart-sidebar">
+                <div class="cart-header">
+                    <h3><i class="fas fa-shopping-cart"></i> سلة التسوق</h3>
+                    <button class="close-cart" id="close-cart">&times;</button>
+                </div>
+                <div class="cart-items" id="cart-items">
+                    <!-- العناصر ستضاف بواسطة JavaScript -->
+                    <p class="empty-cart">سلة التسوق فارغة</p>
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>المجموع:</span>
+                        <span id="cart-total">0 ر.س</span>
+                    </div>
+                    <button class="btn btn-primary" id="checkout-btn">إتمام الشراء</button>
+                </div>
+            </div>
+            
+            <!-- زر عرض سلة التسوق -->
+            <button class="cart-toggle" id="cart-toggle">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <!-- نفس الفوتر الموجود في index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
