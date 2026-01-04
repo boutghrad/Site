@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي - اتصل بنا</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">موقعي الإلكتروني</a>
+                </div>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                        <li><a href="shop.html"><i class="fas fa-shopping-bag"></i> المتجر</a></li>
+                        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                    </ul>
+                    
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 📞 صفحة الاتصال -->
+        <section class="contact-page">
+            <!-- قسم البطل -->
+            <div class="page-hero">
+                <h1>اتصل بنا</h1>
+                <p>يسعدنا تواصلكم معنا، يمكنكم استخدام أي من قنوات الاتصال التالية</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- نموذج الاتصال -->
+                <div class="contact-form-container">
+                    <h2><i class="fas fa-envelope"></i> أرسل رسالة</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">الموضوع *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <div class="error-message" id="subject-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">الرسالة *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- معلومات الاتصال -->
+                <div class="contact-info-container">
+                    <h2><i class="fas fa-info-circle"></i> معلومات الاتصال</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>العنوان</h3>
+                                <p>شارع الملك فهد، حي العليا<br>الرياض 12211، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>الهاتف</h3>
+                                <p>+966 11 123 4567<br>+966 55 123 4567</p>
+                                <p>ساعات العمل: 8 صباحاً - 10 مساءً</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>البريد الإلكتروني</h3>
+                                <p>info@mysite.com<br>support@mysite.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>ساعات العمل</h3>
+                                <p>الأحد - الخميس: 8 صباحاً - 5 مساءً<br>الجمعة - السبت: 10 صباحاً - 2 مساءً</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- خريطة وهمية -->
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>خريطة الموقع</p>
+                        </div>
+                    </div>
+                    
+                    <!-- وسائل التواصل الاجتماعي -->
+                    <div class="social-contact">
+                        <h3>تابعنا على</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- الأسئلة الشائعة -->
+            <div class="faq-section">
+                <h2><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>كيف يمكنني تتبع طلبي؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>بعد إتمام الشراء، سنرسل لك رسالة تحتوي على رقم التتبع. يمكنك استخدامه في صفحة "تتبع الطلب" على موقعنا.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>ما هي مدة التوصيل؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>مدة التوصيل تتراوح بين 1-3 أيام عمل داخل الرياض، و3-7 أيام لباقي مدن المملكة.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>هل يمكنني إرجاع المنتج؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>نعم، يمكنك إرجاع المنتج خلال 14 يومًا من استلامه بشرط أن يكون بحالته الأصلية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- نفس الفوتر الموجود في index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
